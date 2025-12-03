@@ -1,0 +1,284 @@
+:root {
+    --color-principal: #35424a;
+    --color-secundario: #f4f4f4;
+    --color-resalte: #e8491d;
+    --color-azul: #008fcc;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: var(--color-secundario);
+}
+
+.contenedor {
+    width: 100%; 
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.principal {
+    height: 38px;
+    background: var(--color-resalte);
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header {
+    background: var(--color-principal);
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: var(--color-azul) 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+#titulo-blanco {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+#titulo-azul {
+    color: #008fcc;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .actual a, header a:hover {
+    color: var(--color-azul);
+    font-weight: bold;
+}
+
+#encabezado{
+    min-height: 400px;
+    background: url("https://www.tropicanafm.com/wp-content/uploads/2025/11/02112025-SENA.jpg") no-repeat center center;
+    background-size: 100% 400px;
+    text-align: center;
+    color: #CCFFFF;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#boletin {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--color-principal);
+    overflow: hidden;
+}
+
+#boletin h1 {
+    float: left;
+    margin: 0;
+}
+
+#boletin form {
+    float: right;
+    margin-top: 5px;
+}
+
+#boletin input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+#principal .cajas {
+    margin-top: 20px;
+}
+
+#principal .caja {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#principal .caja img {
+    width: 90px;
+}
+
+#principal-servicios {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contenido-servicios {
+    flex: 3;
+    padding-right: 30px;
+}
+
+#lateral-servicios {
+    flex: 1;
+}
+
+#lateral-servicios .oscura {
+    background: var(--color-principal);
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#contenido-servicios .servicio {
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #ffffff;
+}
+
+#contenido-servicios .servicio h3 {
+    margin-top: 0;
+}
+
+#contenido-servicios .fondo-oscuro {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formulario-contacto textarea {
+    min-height: 150px;
+}
+
+.formulario-contacto .boton-principal {
+    width: 100%; 
+    height: 45px;
+    margin-top: 10px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: var(--color-azul);
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    header li {
+        float: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    #boletin h1, #boletin form {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #principal .caja {
+        width: 45%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #principal .caja {
+        width: 100%;
+    }
+
+    #encabezado h1 {
+        font-size: 24px;
+    }
+
+    #encabezado p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    #boletin input[type="correo"] {
+        width: 100%;
+    }
+
+    #boletin button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
