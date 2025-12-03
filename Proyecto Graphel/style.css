@@ -178,11 +178,11 @@ header .actual a, header a:hover {
 }
 
 #contenido-servicios .fondo-oscuro {
-    background: #35424a;
-    color: #ffffff;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: var(--color-azul);
+    text-align: center;
 }
 
 .formulario-contacto label {
@@ -281,4 +281,5 @@ footer {
         width: 100%;
         margin-top: 10px;
     }
+
 }
